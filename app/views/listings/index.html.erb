@@ -15,13 +15,14 @@
 
   <tbody>
 
-  <%= link_to 'New Listing', new_listing_path, class: "btn btn-link" %>
 
     <% @listings.each do |listing| %>
+   
       <tr>
         <td><%= listing.name %></td>
         <td><%= listing.description %></td>
         <td><%= listing.price %></td>
+         <%= image_tag listing.picture if listing.picture.attached? %>
         <td><%= link_to 'Show', listing, class: "btn btn-link" %></td>
         <td><%= link_to 'Edit', edit_listing_path(listing), class: "btn btn-link" %></td>
         <td><%= link_to 'Destroy', listing, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-link" %></td>
@@ -31,5 +32,8 @@
 </table>
 
 <br>
+
+  <%= link_to 'New Listing', new_listing_path, class: "btn btn-link" %>
+
 
 
