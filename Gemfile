@@ -56,3 +56,6 @@ gem 'twitter-bootstrap-rails'
 group :doc do
   gem 'sdoc', require: false
 end
+gem "aws-sdk-s3", "~> 1.84"
+
+gem 'devise'
