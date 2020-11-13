@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Craftymarket</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title>Crafty Market</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+<%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+<%= render 'layouts/navbar' %>
 
-  <body>
-  <a href="/pages/about">About</a>
-  <a href="/pages/contact">Contact</a>
-    <%= yield %>
-  </body>
+<%= yield %>
+
+<%= render 'layouts/footer' %>
+
+</body>
 </html>
