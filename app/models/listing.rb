@@ -1,10 +1,9 @@
 class Listing < ApplicationRecord
     has_one_attached :picture
+    belongs_to :user
 
-
-    validates_presence_of :name, :description, :price
-    validates :name, format: { with: /^[a-zA-Z0-9]*$/, :multiline => true, message: "should only contain alpha-numeric characters" }
+    validates :name, :description, :price, presence: true
     validates :price, numericality: { greater_than: 0 }
-    validates :description, length: { maximum: 300, too_long: "300 character limit, please shorten your description"}
   
+
 end
