@@ -45,6 +45,14 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 # gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+#devise
+gem 'devise'
+
+# Rails 5.2 and Rails 6
+gem 'active_storage_validations'
+
+# Optional, to use :dimension validator or :aspect_ratio validator
+gem 'mini_magick', '>= 4.9.5'
 
 gem 'bootstrap-sass', '~> 3.4.1'
 gem 'sassc-rails', '>= 2.1.0'
@@ -57,5 +65,3 @@ group :doc do
   gem 'sdoc', require: false
 end
 gem "aws-sdk-s3", "~> 1.84"
-
-gem 'devise'
