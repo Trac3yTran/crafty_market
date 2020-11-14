@@ -2,7 +2,7 @@
 <div class="row">
   <div class="col-md-6">
     <div class="thumbnail">
-         <%= image_tag @listing.picture if @listing.picture.attached? %>
+         <%= link_to image_tag(@listing.thumbnail) %>
     </div>
   </div>
   <div class="col-md-6">
