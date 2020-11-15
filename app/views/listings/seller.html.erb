@@ -10,7 +10,7 @@
 
   <% @listings.each do |listing| %>
     <tr class="center">
-      <td><%= link_to image_tag(listing.picture) if listing.picture.attached?%></td>
+      <td><%= link_to image_tag(listing.picture)%></td>
       <td><%= listing.name %></td>
       <td><%= listing.description %></td>
       <td><%= number_to_currency(listing.price) %></td>
