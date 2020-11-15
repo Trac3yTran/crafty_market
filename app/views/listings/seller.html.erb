@@ -10,18 +10,19 @@
 
   <% @listings.each do |listing| %>
     <tr class="center">
-      <td><%= link_to image_tag(listing.picture) %></td>
+      <td><%= link_to image_tag(listing.picture) if listing.picture.attached?%></td>
       <td><%= listing.name %></td>
       <td><%= listing.description %></td>
       <td><%= number_to_currency(listing.price) %></td>
       <td>
         <%= link_to "View", listing, class: "btn btn-link" %>
         <%= link_to "Edit", edit_listing_path(listing), class: "btn btn-link" %>
-        <%= link_to 'Delete', listing, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-link" %>
+        <%= button_to 'Delete', listing, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-link" %>
       </td>
     </tr>
   <% end %>
 </table>
+
 
 <br>
 
@@ -29,6 +30,6 @@
   <%= link_to 'New Listing', new_listing_path, class: "btn btn-link" %>
 <% end %>
 
-
+<%= link_to 'Back', listings_path, class: "btn btn-link" %>
 
 
