@@ -10,8 +10,6 @@ class OrdersController < ApplicationController
     @orders = Order.all.where(buyer: current_user).order("created_at DESC")
   end
   
-
-
   # GET /orders
   # GET /orders.json
   def index
@@ -87,6 +85,6 @@ class OrdersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def order_params
-      params.require(:order).permit(:address, :city, :state)
+      params.require(:order).permit(:address, :city, :state,)
     end
 end
