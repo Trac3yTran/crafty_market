@@ -63,4 +63,4 @@ group :doc do
 end
 gem "aws-sdk-s3", "~> 1.84"
 
-gem "jquery", "~> 0.0.1"
+

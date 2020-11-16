@@ -110,7 +110,6 @@ GEM
     jbuilder (2.10.1)
       activesupport (>= 5.0.0)
     jmespath (1.4.0)
-    jquery (0.0.1)
     jquery-rails (4.4.0)
       rails-dom-testing (>= 1, < 3)
       railties (>= 4.2.0)
@@ -241,7 +240,6 @@ DEPENDENCIES
   coffee-rails
   devise
   jbuilder (~> 2.7)
-  jquery (~> 0.0.1)
   jquery-rails
   listen (~> 3.2)
   mini_magick (>= 4.9.5)
