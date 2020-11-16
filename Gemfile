@@ -51,14 +51,16 @@ gem 'devise'
 # Rails 5.2 and Rails 6
 gem 'active_storage_validations'
 
-gem 'bootstrap', '~> 5.0.0.alpha3'
+gem 'bootstrap-sass', '~> 3.4.1'
 gem 'sassc-rails', '>= 2.1.0'
+
 gem 'uglifier', '~> 2.7', '>= 2.7.2'
 gem 'coffee-rails'
 gem 'jquery-rails'
-gem 'twitter-bootstrap-rails'
 
 group :doc do
   gem 'sdoc', require: false
 end
 gem "aws-sdk-s3", "~> 1.84"
+
+gem "jquery", "~> 0.0.1"
