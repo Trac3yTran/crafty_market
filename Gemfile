@@ -51,9 +51,14 @@ gem 'devise'
 # Rails 5.2 and Rails 6
 gem 'active_storage_validations'
 
+# Payment
+gem 'stripe'
+
+#PG search
+gem 'pg_search'
 
 
-
+# Styling
 gem 'bootstrap-sass', '~> 3.4.1'
 gem 'sassc-rails', '>= 2.1.0'
 gem 'uglifier', '~> 2.7', '>= 2.7.2'
@@ -65,3 +70,4 @@ group :doc do
   gem 'sdoc', require: false
 end
 gem "aws-sdk-s3", "~> 1.84"
+

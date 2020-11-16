@@ -144,6 +144,9 @@ GEM
       mini_portile2 (~> 2.4.0)
     orm_adapter (0.5.0)
     pg (1.2.3)
+    pg_search (2.3.4)
+      activerecord (>= 5.2)
+      activesupport (>= 5.2)
     puma (4.3.6)
       nio4r (~> 2.0)
     rack (2.2.3)
@@ -208,6 +211,7 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
+    stripe (5.28.0)
     thor (1.0.1)
     thread_safe (0.3.6)
     tilt (2.0.10)
@@ -256,6 +260,7 @@ DEPENDENCIES
   listen (~> 3.2)
   mini_magick (>= 4.9.5)
   pg (>= 0.18, < 2.0)
+  pg_search
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.4)
   sass-rails (>= 6)
@@ -263,6 +268,7 @@ DEPENDENCIES
   sdoc
   spring
   spring-watcher-listen (~> 2.0.0)
+  stripe
   turbolinks (~> 5)
   twitter-bootstrap-rails
   uglifier (~> 2.7, >= 2.7.2)
