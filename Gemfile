@@ -59,7 +59,7 @@ gem 'pg_search'
 
 
 # Styling
-gem 'bootstrap-sass', '~> 3.4.1'
+gem 'bootstrap', '~> 5.0.0.alpha3'
 gem 'sassc-rails', '>= 2.1.0'
 gem 'uglifier', '~> 2.7', '>= 2.7.2'
 gem 'coffee-rails'
