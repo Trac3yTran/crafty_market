@@ -16,23 +16,6 @@
 
  @import "bootstrap-sprockets";
  @import "bootstrap";
- @import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR|Fredoka+One|Varela+Round&display=swap');
-
-$logo-font: "Fredoka One", sans-serif;
-$heading-font: "Source Sans Pro", sans-serif;
-$body-font: "Noto Serif KR";
-
-h1, h2, h3, h4, h5 {
-  font-family: $logo-font;
-}
-
-p {
-  font-family: $heading-font;
-}
-
-#logo {
-  font-family: $logo-font;
-}
 
 body {
   background-color: #F5F5F1;
@@ -43,7 +26,6 @@ body {
 .navbar-default {
     background-color: #EFEFEB;
 }
-
 
 .navbar-default .navbar-brand {
     font-family: guardian-egyptt, georgia, serif;
@@ -67,8 +49,6 @@ body {
     clear: left;
   }
 
-
-
   .thumbnail{
     width: 100%;
     object-fit: contain;
@@ -80,9 +60,9 @@ body {
     object-fit: cover;
   }
   
-  // .jumbotron {
-  //   background-image: url('banner.png');
-  // } 
+  .jumbotron {
+    background-image: url('banner.png');
+  } 
 
   // body { 
   //   background-image: image-url('background.jpeg'); 
