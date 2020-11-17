@@ -1,22 +1,35 @@
-<% if user_signed_in? %>
-  <%= link_to 'New Listing', new_listing_path, class: "btn btn-link" %>
-<% end %>
+
+<div class="frontPageCover">
+  <h1 class="bannerFont">Handcrafted items from around the world</h1>
+  <h2 class="bannerFont">Discover unique items in one place</h2>
+</div>
+
+<div class="newButton">
+  <div class="justify-content-start">
+  <% if user_signed_in? %>
+    <%= link_to 'New Listing', new_listing_path, class:"btn btn-success"%>
+  <% end %>
+  </div>
+</div>
 
 <section class="listingDisplaySection">
-    
-<% @listings.each do |listing| %>
-    <div class="craftyCard">
-        <%= link_to image_tag(listing.picture), listing %>
-          <h3><%= listing.name %></h3>
-          <p><%= number_to_currency(listing.price) %></p>
-          <p><%= "Sold by #{listing.user.name}" %></p>
-          <% if (user_signed_in?) && (current_user == listing.user) %>
-              <%= link_to 'Edit', edit_listing_path(listing), class: "btn btn-link" %>
-              <%= button_to 'Delete', listing, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-link" %>
-        <% end %>
-    </div> 
-<% end %>
-
-<section>  
-
-
+    <% @listings.each do |listing| %>
+        <section class="craftyCard">
+              <%# Image %>
+            <div class="caftyCardImage" style="background-image: url(<%= rails_blob_path(listing.picture, disposition: "attachment", only_path: true) %>); background-position: center; background-repeat: no-repeat; background-size: cover;">
+            </div>
+              <%# Title %>
+            <h3><%= listing.name %></h3>
+              <%# Price %>
+            <p><%= number_to_currency(listing.price) %></p>
+            <%# Sold by %>
+              <p><%= "Sold by #{listing.user.name}" %></p>
+              <%# Edit Links %>
+              <%= link_to  'Show', listing, class:"btn btn-primary btn-sm" %>
+            <% if (user_signed_in?) && (current_user == listing.user) %>
+                  <%= link_to 'Edit', edit_listing_path(listing), class:"btn btn-primary btn-sm" %>
+                  <%= link_to 'Delete', listing, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-primary btn-sm" %>
+            <% end %>
+        </section>
+    <% end %>
+</section>

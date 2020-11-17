@@ -14,6 +14,7 @@
  *= require_self
  */
 
+// nav bar
 
 .navigationalBar {
   width: 100%;
@@ -50,6 +51,8 @@
   color: palevioletred;
 }
 
+// banner
+
 .frontPageCover {
  width: 100%;
  height: 400px;
@@ -64,46 +67,18 @@
 }
 
 
-.navbar-default .navbar-brand {
-    font-family: guardian-egyptt, georgia, serif;
-    font-weight: 400;
-    color: #d5641c;
-    font-size: 30px;
-  }
+// background image
 
-  .navbar-default .navbar-nav > li > a {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    color: #0192B5;
-  }
+  // body { 
+  //   background-image: image-url('background.jpeg'); 
+  //   background-position: center;
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  // }
 
-  .col-md-3:nth-child(4n+1) {
-    clear: left;
-  }
 
-  .thumbnail{
-    width: 100%;
-    object-fit: contain;
-  }
-
-  .listing-display{
-    width: 100%;
-    // height: 50%;
-    object-fit: cover;
-  }
+  // listing display
   
-  // .jumbotron {
-  //   background-image: url('banner.png');
-  // } 
-
-  body { 
-    background-image: image-url('background.jpeg'); 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
   .listingDisplaySection {
     width: 100%;
     display: flex;
@@ -113,14 +88,30 @@
   
   .craftyCard {
     margin: 15px;
-    width: 300px;
-    height: 400px;
+    padding: 10px;
+    width: 400px;
+    height: 500px;
     background-color: rgb(245, 226, 205);
     text-align: center;
     box-shadow: (5px 5px 5px #A6ADAD);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .caftyCardImage {
+    width: 100%;
+    height: 300px;
+    border-bottom: 1px solid black;
   }
 
   .bannerFont{
     font-family: 'Big Shoulders Inline Display', cursive;
     font-size:60px;
   }
+
+  .newButton{
+    padding:20px;
+    position: relative;
+  }
+ 

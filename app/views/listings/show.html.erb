@@ -1,26 +1,49 @@
 
+  <div class="container d-flex flex-column flex-md-row px-2 my-2 my-md-5">
+      <div class="content col-12 col-md-7 col-lg-8 p-0 pr-md-3">
+            <div class="col-12 p-0 main-preview mb-4">
+              <div class="caftyCardImage" style="background-image: url(<%= rails_blob_path(@listing.picture, disposition: "attachment", only_path: true) %>); background-position: center; background-repeat: no-repeat; background-size: cover;">
+              </div>
+            </div>
+      </div>
+  
+      <div class="sidebar col-lg-4 p-0 mx-2 d-md-block">
+         <div class="col-12 p-3 about-container">
+              <div class="d-flex justify-content-between">
+                <h1><%= number_to_currency(@listing.price) %></h1>
+              </div>
+          </div>
+    
+
+      <div class="col-12 p-3 about-container">
+            <div class="mt-3">
+              <h1><%= @listing.name %></h1>
+              </div>
+        </div>
+
+      <div class="border-top mt-4">
+          <div class="mt-3">
+            <h3>Description:</h3>
+            <p><%= @listing.description %></p>
+          </div>
+      </div>
+
+      <div class="border-top mt-4">
+          <div class="mt-3">
+            <h3>Seller:</h3>
+            <h5><%= @listing.user.name %></h5>
+          </div>
+        </div>
 
 
+      <div class="center">
+          <%= link_to "Buy It Now", new_listing_order_path(@listing), class: "btn btn-primary" %>
+      </div>
+
+      
 
 
-<div class="container d-flex flex-column flex-md-row px-2 my-2 my-md-5">
-  <div class="content col-12 col-md-7 col-lg-8 p-0 pr-md-3">
-    <div class="col-12 p-0 main-preview mb-4">
-         <%= link_to image_tag(@listing.thumbnail) %>
-    </div>
-  </div>
-  <div class="content col-12 col-md-7 col-lg-8 p-0 pr-md-3">
-    <h3><%= @listing.name %></h3>
-    <p><%= number_to_currency(@listing.price) %></p>
-    <p><%= @listing.description %></p>
-    <br>
-    <div class="center">
-      <%= link_to "Buy It Now", new_listing_order_path(@listing), class: "btn btn-primary" %>
-    </div>
-  </div>
-</div>
-
-<% if current_user == @listing.user %>
-  <%= link_to 'Edit', edit_listing_path(@listing), class: "btn btn-link" %> |
-<% end %>
-<%= link_to 'Back', listings_path, class: "btn btn-link" %>
+        <% if current_user == @listing.user %>
+          <%= link_to 'Edit', edit_listing_path(@listing), class: "btn btn-link" %> |
+        <% end %>
+        <%= link_to 'Back', listings_path, class: "btn btn-link" %>
