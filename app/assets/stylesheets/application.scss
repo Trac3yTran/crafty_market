@@ -15,16 +15,54 @@
  */
 
 
-
-body {
-  background-color: #F5F5F1;
-  color: #333333;
-  font-family: Arial, Helvetica, sans-serif;
+.navigationalBar {
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  padding: 0px 25px 0px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
 }
 
-.navbar-default {
-    background-color: #EFEFEB;
+.logoAndSearch {
+  display: flex;
+  flex-direction: row;
 }
+
+.craftyMarketnavBarLogo {
+  margin: 0px 25px 0px 0px;
+  font-family: 'Modak', cursive;
+  color: palevioletred;
+  font-size: 50px;
+}
+
+.navBarDropDowns {
+  margin: 0px 10px 0px 10px;
+  color: palevioletred;
+  display: flex;
+  flex-direction: row;
+}
+
+.navLinkButtons {
+  margin: 0px 10px 0px 10px;
+  color: palevioletred;
+}
+
+.frontPageCover {
+ width: 100%;
+ height: 400px;
+ background-image: url("banner_main1.png");
+ background-position: center;
+ background-repeat: none;
+ background-size: cover;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+}
+
 
 .navbar-default .navbar-brand {
     font-family: guardian-egyptt, georgia, serif;
@@ -38,10 +76,6 @@ body {
     font-size: 14px;
     font-weight: bold;
     color: #0192B5;
-  }
-
-  .center {
-    text-align: center;
   }
 
   .col-md-3:nth-child(4n+1) {
@@ -59,14 +93,29 @@ body {
     object-fit: cover;
   }
   
-  .jumbotron {
-    background-image: url('banner.png');
-  } 
+  // .jumbotron {
+  //   background-image: url('banner.png');
+  // } 
 
-  // body { 
-  //   background-image: image-url('background.jpeg'); 
-  //   background-position: center;
-  //   background-repeat: no-repeat;
-  //   background-size: cover;
-  // }
+  body { 
+    background-image: image-url('background.jpeg'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .listingDisplaySection {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: none;
+  }
   
+  .craftyCard {
+    margin: 15px;
+    width: 300px;
+    height: 400px;
+    background-color: rgb(245, 226, 205);
+    text-align: center;
+    box-shadow: (15px 1px 5px #EBEDED);
+  }
