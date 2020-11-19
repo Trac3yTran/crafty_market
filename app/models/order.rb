@@ -1,4 +1,5 @@
 class Order < ActiveRecord::Base
+  # validate address in new order form
     validates :address, :city, :state, presence: true
   
     belongs_to :listing

@@ -3,13 +3,13 @@ class OrdersController < ApplicationController
   before_action :authenticate_user!
 
   #seller id
-
+  # sales history page 
   def sales
     @orders = Order.all.where(seller: current_user).order("created_at DESC")
   end
 
   # buyer id
-
+  # purchase history page 
   def purchases
     @orders = Order.all.where(buyer: current_user).order("created_at DESC")
   end
@@ -42,6 +42,7 @@ class OrdersController < ApplicationController
     @listing = Listing.find(params[:listing_id])
     @seller = @listing.user
 
+    # for sales history and purchase history 
     @order.listing_id = @listing.id
     @order.buyer_id = current_user.id
     @order.seller_id = @seller.id

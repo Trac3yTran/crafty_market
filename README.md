@@ -291,6 +291,7 @@ end
 
 This project is tracked and managed using Trello. The below screenshot shows the initial planning of the application. I started on the document and working through my ERD and associations. Once I have created the ERD, I started planning out the MVP; ensuring has CRUD functionality, image uploads and user authentication using Devise. Styling was added through the different stages of the application. 
 
+[Link to Trello Board](https://trello.com/b/RBop0vld/t2a2-marketplace-project-crafty-market)
+
 ![img](./docs/Trello.png)
 
-https://trello.com/b/RBop0vld/t2a2-marketplace-project-crafty-market
