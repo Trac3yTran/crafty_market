@@ -83,7 +83,7 @@ Purchased History
 
  **Target audience**: 
  
- The target audience for this application is for anyone that wants to seller their creative items; this can be anything that could be material or handmade products. Prices are listed in AUD; however, the audience is not restricted to Australia.
+ The target audience for this application is for anyone that wants to sell their creative items; this can be anything from material to make items or handmade products. Prices are listed in AUD; however, the audience is not restricted to Australia.
 
  **Tech stack**:
 
@@ -93,11 +93,11 @@ Back-end: Ruby on Rails 5.2.4.
 
 Database: Postgresql
 
-Deployment: Heroku.
+Deployment: Heroku
 
 Biz Tools: Trello
 
-Utilities: Devise, AWS S3.
+Utilities: Devise, AWS S3
 
 DevOps: Git, Github, VS Code, Bundler, Balsamiq
 
@@ -151,6 +151,13 @@ Crafty Market allows user profile to be set between buyer and seller. This will 
 
  ### **R16 | 3rd Party Services**:
 
+**Devise:** The Devise Gem is users for User Authentication. It creates sign-up and sign-in forms; it also can be used to create user accounts for privacy.
+
+**Amazon S3:**  Facilitates image upload and provides object storage through a web service interface.
+
+**Bootstrap Framework:** The Bootstrap framework has been used with CSS to style buttons, forms and overall aesthetic of the application. 
+
+**Heroku:** For deployment for the application and operates the application entirely in the cloud.
 
  #
 
