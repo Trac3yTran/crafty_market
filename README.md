@@ -57,6 +57,11 @@ Once the user has created their account there will have access to the dashboard 
 
  **Screenshots**:
 
+ Homepage & Listing Page 
+
+![img](./docs/homepage.png)
+
+
  **Target audience**:
 
  **Tech stack**:
