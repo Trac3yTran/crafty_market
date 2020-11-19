@@ -69,6 +69,18 @@ Show listing
 
 ![img](./docs/show.png)
 
+Seller Account (Manage Listing)
+
+![img](./docs/manage.png)
+
+Seller Account (Sales History)
+
+![img](./docs/sales.png)
+
+Purchased History 
+
+![img](./docs/purchase.png)
+
  **Target audience**:
 
  **Tech stack**:
