@@ -61,6 +61,13 @@ Once the user has created their account there will have access to the dashboard 
 
 ![img](./docs/homepage.png)
 
+Create listing
+
+![img](./docs/new.png)
+
+Show listing
+
+![img](./docs/show.png)
 
  **Target audience**:
 
