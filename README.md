@@ -171,6 +171,13 @@ Purchase History
 
  ### **R15 | High-level components**:
 
+Crafty Market is a two-sided marketplace built on Ruby on Rails framework. Its utilise Postgresql as the database system. Authorisation and data sanitising methods are used within each model to ensure the integrity of the database.
+
+When a user visits the site, they can browse through the listing but cannot purchase anything. It will direct them to sign up form or login form. The use of Devise allows authorisation scope and displays a different view based on user status. For full access to the application, the user must create an account; this will allow them to do both buyer and seller functionality. When a user creates an account, they can create a new listing and purchase a listing from other sellers. Edit and Delete functions can only be accessible to the owner of the listing and cannot be deleted by anyone else. 
+
+User can also access their dashboard that available for them when they create an account. This will show separate their buyer and seller functions. In the Seller account, they can access the Manage Listing to look at all the listings that now listed on the Crafty Marketplace to easily manage in one spot. User can also view Sales History to see who has purchased their item. On the buyer side, the user can edit their account and view purchase history in one spot. 
+
+A search function is available for a user to search for the item they are after. If there is a listing that matches with their listing, it will display if not that means no one has listed the item and will need to search for a different item. 
 
  #
 
@@ -215,10 +222,13 @@ belongs_to :seller, class_name: "User"
 
  ### **R18 | Database Relations**:
 
+**User:** There are many relations that belong to the user table, such as listing and order. The primary key in the user table user_id is used as a foreign key in the listing table and order table. 
 
+**Listing:** Each Listing belongs to a single user. Users have a slightly different relationship with listings. In the case of users, each user can have many listings has_many: listings, dependent: : destroy.Dependent destroy says is that a Listing's existence depends on the existence of the user who created it. If that user is deleted, then the listing will automatically be deleted as well. The listing also has many orders and needs one attached picture.
+
+**Order:** Belongs to the listing. Each order belongs to a buyer or a seller that has a class name "User". It's using the foreign key to access the User table.
 
  #
-
 
  ### **R19 | Database Schema Design**:
 
