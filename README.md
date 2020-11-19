@@ -185,16 +185,37 @@ Purchase History
 **Heroku:** For deployment for the application and operates the application entirely in the cloud.
 
  #
-
-
  ### **R17 | Models**: 
 
+USER
 
+  ```
+has_many :listings, dependent: :destroy
+has_many :sales, class_name: "Order", foreign_key: "seller_id"
+has_many :purchases, class_name: "Order", foreign_key: "buyer_id"
+  ```
 
+LISTING
+
+```
+has_one_attached :picture
+belongs_to :user
+has_many :orders 
+```
+
+ORDER
+
+```
+belongs_to :listing
+belongs_to :buyer, class_name: "User"
+belongs_to :seller, class_name: "User"
+```
 
  #
 
  ### **R18 | Database Relations**:
+
+
 
  #
 
@@ -264,7 +285,6 @@ Purchase History
 end
 
 ```
-
  #
 
  ### **R20 | Task Management**:
