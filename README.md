@@ -87,25 +87,23 @@ Purchased History
 
  **Tech stack**:
 
- Front-end: HTML5, CSS3, SCSS, Embedded Ruby, Bootstrap
+**Front-end:** HTML5, CSS3, SCSS, Embedded Ruby, Bootstrap
  
-Back-end: Ruby on Rails 5.2.4.
+**Back-end:** Ruby on Rails 5.2.4.
 
-Database: Postgresql
+**Database:** Postgresql
 
-Deployment: Heroku
+**Deployment:** Heroku
 
-Biz Tools: Trello
+**Biz Tools:** Trello
 
-Utilities: Devise, AWS S3
+**Utilities:** Devise, AWS S3
 
-DevOps: Git, Github, VS Code, Bundler, Balsamiq
+**DevOps:** Git, Github, VS Code, Bundler, Balsamiq
 
  #
 
  ### **R12 | User Stories**
-
- # 
 
 Crafty Market allows user profile to be set between buyer and seller. This will give each user the ability to create a listing and view listing. User stories will be broken down by the into different functionality between buyers and sellers.  
 
@@ -136,6 +134,33 @@ Crafty Market allows user profile to be set between buyer and seller. This will 
 #
  ### **R13 | Wireframes**:
 
+Homepage
+
+![img](./docs/whomepage.png)
+
+Search
+
+![img](./docs/wsearch.png)
+
+Create
+
+![img](./docs/wcreate.png)
+
+Show listing
+
+![img](./docs/wdisplay.png)
+
+Manage Listing
+
+![img](./docs/wmanage.png)
+
+Sales History 
+
+![img](./docs/wsales.png)
+
+Purchase History
+
+![img](./docs/wpurchase.png)
  #
 
  ### **R14 | ERD**:
@@ -180,3 +205,6 @@ Crafty Market allows user profile to be set between buyer and seller. This will 
 
  ### **R20 | Task Management**:
 
+
+
+https://trello.com/b/RBop0vld/t2a2-marketplace-project-crafty-market
