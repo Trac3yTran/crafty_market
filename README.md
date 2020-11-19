@@ -81,9 +81,25 @@ Purchased History
 
 ![img](./docs/purchase.png)
 
- **Target audience**:
+ **Target audience**: 
+ 
+ The target audience for this application is for anyone that wants to seller their creative items; this can be anything that could be material or handmade products. Prices are listed in AUD; however, the audience is not restricted to Australia.
 
  **Tech stack**:
+
+ Front-end: HTML5, CSS3, SCSS, Embedded Ruby, Bootstrap
+ 
+Back-end: Ruby on Rails 5.2.4.
+
+Database: Postgresql
+
+Deployment: Heroku.
+
+Biz Tools: Trello
+
+Utilities: Devise, AWS S3.
+
+DevOps: Git, Github, VS Code, Bundler, Balsamiq
 
  #
 
@@ -91,7 +107,7 @@ Purchased History
 
  # 
 
-Crafty Market allow user profile to be set between buyer and seller. This will give each user the ability to create a listing and view listing. User stories will be broken down by the into different functionality between buyers and sellers.  
+Crafty Market allows user profile to be set between buyer and seller. This will give each user the ability to create a listing and view listing. User stories will be broken down by the into different functionality between buyers and sellers.  
 
 **User Access Management**:
 
@@ -101,21 +117,21 @@ Crafty Market allow user profile to be set between buyer and seller. This will g
 - As a buyer or seller, I want to be able to logout of my account any time.
 - As a buyer or seller, I want to delete my account anytime. 
 
-**Buyer**:
+**Listings:**
 
-
-**Seller**:
-
+- As a buyer, I want to purchase a listing item.
+- As a buyer, I want to see my purchase history
 - As a seller, I want to create a post to sell my listing
 - As a seller, I can upload a name, description, price and photo of my listing products to sell it.
 - As a seller, I want to edit and delete my listing to reflect the correct information. 
 - As a seller, I want to view my listing and one place to keep track of what I am selling
+- As a seller, I want to see my listing in one page so I can manage all listing
+- As a seller, I want to see my sales history to see who has purchased my item. 
 
 **Authentication & Authorisation**:
 
 - As a buyer or seller, I do not want others to be able to access my order and to keep my details safe
 - As a seller, I do not want others to edit and delete my posts
-
 
 #
  ### **R13 | Wireframes**:
