@@ -1,21 +1,7 @@
 
 <%= render "errors" %>
-<div class="container-fluid">
-  <h1 class="hero-title text-center m-5">New Listing</h5>
-</div>
-<div class="container d-flex flex-column flex-md-row px-2 my-2 my-md-5">
-  <div class="content col-12 col-md-7 col-lg-8 p-0 pr-md-3">
-    <div class="col-12 p-0 main-preview mb-4">
-    </div>
-
-  </div>
-  <div class="sidebar col-lg-4 p-0 mx-2 d-md-block">
-    <div class="col-12 p-3 about-container">
-      <%= render 'form', listing: @listing %>
-    </div>
-  </div>
-  
-</div>
+<h1>New Listing</h5>
+ <%= render 'form', listing: @listing %>
 <%= link_to 'Back', listings_path, class: "btn btn-link" %>
 
 
